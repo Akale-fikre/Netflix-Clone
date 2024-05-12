@@ -8,7 +8,7 @@ const base_url = "https://image.tmdb.org/t/p/original/";
     
     function Row({title, fetchURL, isLargeRow}) {
     const [movies, setMovies] = useState([])
-    const [trailerUrl, setTrailerUrl] = useState([""]);
+    const [trailerUrl, setTrailerUrl] = useState("");
     useEffect(()=>{
         async function fetchData(){
             const request = await axios.get(fetchURL);
